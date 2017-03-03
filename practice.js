@@ -47,10 +47,7 @@ var me = {
     first: `${first}`,
     last: `${last}`,
     lovesDevMountain: true,
-    learnES6()
-    {
-        return 'This is awesome!';
-    }
+    learnES6: () => 'This is awesome!'
 }
 
 
@@ -175,4 +172,7 @@ const that = {
 
 // using an arrow function, add a property named arrow that returns the window object
 // do this without using the window keyword. HINT: The default binding of the this keyword
-that.arrow = () => { return this };
+that.arrow = () =>
+{
+    return this
+};
